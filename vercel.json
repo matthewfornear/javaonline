@@ -1,6 +1,4 @@
 {
-  "buildCommand": "echo 'No build step required for static files'",
-  "outputDirectory": ".",
   "functions": {
     "api/bug-report.js": {
       "maxDuration": 10
