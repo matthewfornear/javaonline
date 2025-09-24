@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-area">
+            <pre id="game-display"></pre>
+        </div>
+        <div id="gui-area">
+            <div class="info-box" id="combat-log">
+                <h3>COMBAT LOG</h3>
+                <div id="combat-messages"></div>
+            </div>
+            <div class="info-box" id="enemies-nearby">
+                <h3>ENEMIES NEARBY</h3>
+                <div id="enemies-list"></div>
+            </div>
+            <div class="info-box" id="player-stats">
+                <h3>PLAYER STATS</h3>
+                <div id="stats-content"></div>
+            </div>
+            <div class="info-box" id="actions">
+                <h3>ACTIONS LOG</h3>
+                <div id="actions-content"></div>
+            </div>
+            <div class="info-box" id="controls">
+                <h3>CONTROLS</h3>
+                <div id="controls-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Engine -->
+    <script src="js/priorityQueue.js"></script>
+    <script src="js/core/entity.js"></script>
+    <script src="js/core/monster.js"></script>
+    <script src="js/core/swingAnimation.js"></script>
+    <script src="js/core/world.js"></script>
+    <script src="js/core/scheduler.js"></script>
+    
+    <!-- Utilities -->
+    <script src="js/utils/entityUtils.js"></script>
+    
+    <!-- Game Modules -->
+    <script src="js/modules/mapGenerator.js"></script>
+    <script src="js/modules/equipmentSystem.js"></script>
+    <script src="js/modules/inventorySystem.js"></script>
+    <script src="js/modules/inventoryRenderer.js"></script>
+    <script src="js/modules/skillsSystem.js"></script>
+    <script src="js/modules/characterGenerator.js"></script>
+    <script src="js/modules/characterProgress.js"></script>
+    <script src="js/modules/asciiRenderer.js"></script>
+    
+    <!-- Game Systems -->
+    <script src="js/systems/movementSystem.js"></script>
+    <script src="js/systems/combatSystem.js"></script>
+    <script src="js/systems/projectileSystem.js"></script>
+    <script src="js/systems/effectSystem.js"></script>
+    
+    <!-- Audio System -->
+    <script src="js/modules/audioSystem.js"></script>
+    
+    <!-- Main Game -->
+    <script src="js/game.js"></script>
+</body>
+</html>
